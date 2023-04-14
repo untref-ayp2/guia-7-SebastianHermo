@@ -4,5 +4,8 @@ package ejercicios
 // array de números enteros y devuelva la suma
 // de todos sus elementos
 func SumaArray(v []int) int {
-	panic("Not implemented")
+	if len(v) == 0 {
+		return 0
+	}
+	return int(v[0]) + SumaArray(v[1:])
 }
